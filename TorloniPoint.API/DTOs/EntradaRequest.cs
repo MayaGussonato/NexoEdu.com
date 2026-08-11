@@ -1,0 +1,7 @@
+namespace TorloniPoint.API.DTOs;
+
+public class EntradaRequest
+{
+    public double? Latitude { get; set; }
+    public double? Longitude { get; set; }
+}

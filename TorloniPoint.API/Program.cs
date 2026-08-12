@@ -26,7 +26,11 @@ builder.Services.AddCors(options =>
     options.AddPolicy("Frontend", policy =>
     {
         policy
-            .WithOrigins("http://localhost:5173")
+            .WithOrigins(
+                "http://localhost:5173",
+                "https://nexoedu-eight.vercel.app",
+                "https://nexoedu-f16hlhgo6-lumyradev-2597s-projects.vercel.app"
+            )
             .AllowAnyHeader()
             .AllowAnyMethod();
     });
@@ -37,7 +41,10 @@ var app = builder.Build();
 app.UseSwagger();
 app.UseSwaggerUI(options =>
 {
-    options.SwaggerEndpoint("/swagger/v1/swagger.json", "Torloni Point API v1");
+    options.SwaggerEndpoint(
+        "/swagger/v1/swagger.json",
+        "Torloni Point API v1"
+    );
 });
 
 using (var scope = app.Services.CreateScope())

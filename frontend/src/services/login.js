@@ -1,4 +1,4 @@
-const API_URL = "http://localhost:5177/api/login";
+const API_URL = "https://unique-fascination-production-27fa.up.railway.app/api/login";
 
 export async function fazerLogin(email, senha) {
   const response = await fetch(API_URL, {

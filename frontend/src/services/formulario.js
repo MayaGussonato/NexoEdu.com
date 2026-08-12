@@ -1,4 +1,4 @@
-const API = "http://localhost:5177";
+const API = "https://unique-fascination-production-27fa.up.railway.app";
 
 export async function enviarFormulario(dados) {
 

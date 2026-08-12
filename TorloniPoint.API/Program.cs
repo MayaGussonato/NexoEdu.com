@@ -29,7 +29,7 @@ builder.Services.AddCors(options =>
             .WithOrigins(
                 "http://localhost:5173",
                 "https://nexoedu-eight.vercel.app",
-                "https://nexoedu-f16hlhgo6-lumyradev-2597s-projects.vercel.app"
+                "https://nexoedu-fl6ihlgo6-lumyradev-2597s-projects.vercel.app"
             )
             .AllowAnyHeader()
             .AllowAnyMethod();
